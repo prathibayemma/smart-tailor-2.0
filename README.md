@@ -6,6 +6,11 @@ A smart tailoring and outfit recommendation web application built with React and
 
 Smart Tailor 2.0 is a web application designed to help users explore outfit ideas and customize dress styles. Users can upload outfit inspiration images, select preferences, and receive recommendations based on their selections.
 
+
+## 📸 Application Preview
+
+![Smart Tailor 2.0 Homepage](screenshots/homepage.png)
+
 ## ✨ Features
 
 * **Image Upload:** Upload and preview outfit inspiration images.
