@@ -74,19 +74,20 @@ function removeImage() {
     setRecommendations("");
 
     try {
-      const response = fetch("https://smart-tailor-backend-63gv.onrender.com/api/recommendations"),
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            skinTone,
-            bodyType,
-            imageData: imageData || undefined,
-          }),
-        }
-      );
+     const response = await fetch(
+  "https://smart-tailor-backend-63gv.onrender.com/api/recommendations",
+  {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      skinTone,
+      bodyType,
+      imageData: imageData || undefined,
+    }),
+  }
+); 
 
       const data = await response.json();
 
