@@ -74,7 +74,7 @@ function removeImage() {
     setRecommendations("");
 
     try {
-      const response = awaitfetch("https://smart-tailor-backend-63gv.onrender.com/api/recommendations"),
+      const response = fetch("https://smart-tailor-backend-63gv.onrender.com/api/recommendations"),
         {
           method: "POST",
           headers: {
