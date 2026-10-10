@@ -5,7 +5,12 @@ const app = express();
 const PORT = 3000;
 
 // Allow your React frontend to connect
-app.use(cors({ origin: "http://localhost:5175" }));
+app.use(cors({
+  origin: [
+    "http://localhost:5175",
+    "https://smart-tailor-2-0.onrender.com"
+  ]
+}));
 app.use(express.json({ limit: "10mb" }));
 
 // Test the backend
